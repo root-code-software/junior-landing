@@ -1,7 +1,7 @@
 name: Deploy Production to Coudflare
 on:
   push:
-    branches: [elease-*]
+    branches: [release-*]
   pull_request:
     types: [opened, synchronize, reopened]
     branches: [release-*]

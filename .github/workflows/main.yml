@@ -28,14 +28,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-          cache-dependency-path: |
-            ./server/yarn.lock
-            ./client/yarn.lock
+          cache-dependency-path: ./yarn.lock
       - name: Install packages
         run: yarn install --frozen-lockfile
       - name: Lint
         run: yarn lint
       - name: Build
-        run: next build && next export
+        run: yarn build
         env:
           NODE_ENV: production
