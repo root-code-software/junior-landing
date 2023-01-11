@@ -1,0 +1,50 @@
+name: Deploy Production to Coudflare
+on:
+  push:
+    branches: [main, release-*]
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main, release-*]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+          cache-dependency-path: |
+            ./server/yarn.lock
+            ./client/yarn.lock
+      - name: Install packages
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: next build && next export
+        env:
+          NODE_ENV: production
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: junior-landing
+          directory: /out
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
