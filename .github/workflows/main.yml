@@ -34,6 +34,6 @@ jobs:
       - name: Lint
         run: yarn lint
       - name: Build
-        run: next build && next export
+        run: yarn build
         env:
           NODE_ENV: production
