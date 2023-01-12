@@ -1,16 +1,16 @@
-.icon{
+.icon {
     @apply shadow-lg shadow-gray-400 p-6 hover:scale-110 ease-in duration-300 bg-[#7eee9a] rounded-lg;
 }
 
-.containerIcon{
+.containerIcon {
     @apply col-span-2 flex justify-between max-w-[800px];
 }
 
-.container{
+.container {
     @apply w-full md:h-screen p-2 flex text-center items-center py-16;
 }
 
-.containerMain{
+.containerMain {
     @apply max-w-[1240px] m-auto md:grid grid-cols-4 gap-8;
 }
 
@@ -21,3 +21,11 @@
 .title {
     @apply col-span-2 text-center pt-10;
 }
+
+.colorB {
+    @apply text-[#1D4ED8];
+  }
+
+  .colorY {
+    @apply text-[#edf03c];
+  }
