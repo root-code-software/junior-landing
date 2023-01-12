@@ -4,8 +4,8 @@ import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import logo from "../public/logo.png";
 
-const Navbar = () => {
-  return (
+const Navbar = () => (
+  
     <div className={styles.container}>
       <div className={styles.containerNavbar}>
         <Image src={logo} alt="/" width="125" height="50" />
@@ -24,11 +24,9 @@ const Navbar = () => {
               <li className={styles.item}>Sobre Nosotros</li>
             </Link>
           </ul>
-          <div></div>
         </div>
       </div>
     </div>
   );
-};
 
 export default Navbar;
