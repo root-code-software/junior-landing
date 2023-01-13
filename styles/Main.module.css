@@ -23,9 +23,9 @@
 }
 
 .colorB {
-    @apply text-[#1D4ED8];
+    @apply text-[#1d4ed8];
   }
 
   .colorY {
-    @apply text-[#edf03c];
+    @apply text-[#facc15];
   }
