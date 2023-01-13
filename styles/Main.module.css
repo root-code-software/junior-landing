@@ -22,10 +22,10 @@
     @apply col-span-2 text-center pt-10;
 }
 
-.colorB {
-    @apply text-[#c083f4];
+.titleBlue {
+    @apply text-[#1D4ED8];
   }
 
-  .colorY {
-    @apply text-[#facc15];
+.titleYellow {
+    @apply text-[#FACC15];
   }

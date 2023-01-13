@@ -8,8 +8,8 @@ const Main = () => (
     <div className={styles.containerMain}>
       <div className={styles.title}>
         <h1>
-          Cada <span className={styles.colorB}> Junior </span>es
-          <span className={styles.colorY}> Único </span>
+          Cada <span className={styles.titleBlue}> Junior </span>es
+          <span className={styles.titleYellow}> Único </span>
         </h1>
         <p className={styles.caption}>
           Te ofrecemos un ambiente donde puedas practicar trabajar en tech, para
