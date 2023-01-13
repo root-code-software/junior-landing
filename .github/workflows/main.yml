@@ -1,0 +1,39 @@
+name: Lint code base
+on:
+  push:
+    branches: [dev, feat/*, fix/*]
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [dev, feat/*, fix/*]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    strategy:
+      matrix:
+        node-version: [14.x, 18.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+          cache-dependency-path: ./yarn.lock
+      - name: Install packages
+        run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint
+      - name: Build
+        run: yarn build
+        env:
+          NODE_ENV: production
