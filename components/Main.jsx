@@ -4,7 +4,6 @@ import MainLogo from "../public/MainLogo.png";
 import styles from "../styles/Main.module.css";
 
 const Main = () => (
-
   <div className={styles.container}>
     <div className={styles.containerMain}>
       <div className={styles.title}>
@@ -16,7 +15,7 @@ const Main = () => (
           Te ofrecemos un ambiente donde puedas practicar trabajar en tech, para
           que ganes experiencia simulando un ambiente de trajo real.
         </p>
-        <br></br>
+        <br/>
         <div className={styles.containerIcon}>
           <div className={styles.icon}>
             <h2>200K+</h2>
@@ -41,7 +40,7 @@ const Main = () => (
           </div>
           <div className={styles.icon}>
             <h2>50+</h2>
-            <br/>
+            <br />
             <a>
               Grupos <br/> Diseñados
             </a>
