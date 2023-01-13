@@ -1,0 +1,31 @@
+.icon {
+    @apply shadow-lg shadow-gray-400 p-6 hover:scale-110 ease-in duration-300 bg-[#7eee9a] rounded-lg;
+}
+
+.containerIcon {
+    @apply col-span-2 flex justify-between max-w-[800px];
+}
+
+.container {
+    @apply w-full md:h-screen p-2 flex text-center items-center py-16;
+}
+
+.containerMain {
+    @apply max-w-[1240px] m-auto md:grid grid-cols-4 gap-8;
+}
+
+.caption {
+    @apply py-4 sm:max-w-[70%] text-left font-bold;
+}
+
+.title {
+    @apply col-span-2 text-center pt-10;
+}
+
+.titleBlue {
+    @apply text-[#1D4ED8];
+  }
+
+.titleYellow {
+    @apply text-[#FACC15];
+  }

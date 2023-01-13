@@ -1,0 +1,11 @@
+  .item {
+    @apply ml-10 text-sm uppercase hover:border-b font-bold;
+  }
+
+  .container {
+    @apply fixed w-full h-20 shadow-xl z-[100] bg-[#2BA84A];
+  }
+
+  .containerNavbar { 
+    @apply flex justify-between items-center w-full h-full px-2 pr-20;
+  }
