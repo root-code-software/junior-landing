@@ -1,0 +1,11 @@
+.container {
+    @apply w-full md:h-screen p-2 flex items-center py-5;
+}
+
+.containerLogo {
+    @apply max-w-[1240px] m-auto md:grid grid-cols-3 gap-6 text-center;
+}
+
+.logoProjects {
+    @apply w-auto h-auto m-auto shadow-xl shadow-gray-400 rounded-xl items-center justify-center p-4 hover:scale-105 ease-in duration-300
+}

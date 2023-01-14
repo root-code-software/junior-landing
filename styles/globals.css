@@ -15,7 +15,7 @@ html {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-medium
   }
 
   h1 {
@@ -31,10 +31,11 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply bg-purple-700 font-medium rounded-lg text-sm px-10 py-2.5 mr-2 mb-2 text-white
   }
 
   a {
    @apply font-medium
   }
+  
 }
