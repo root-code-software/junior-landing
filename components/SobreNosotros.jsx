@@ -1,5 +1,5 @@
 import Image from "next/image"
-import imageSobreNosotros from "../assets/Sin_fondo.png"
+import imageSobreNosotros from "../public/sobrenosotros.png"
 import Style from "../styles/SobreNosotros.module.css"
 
 const SobreNosotros = () => (
