@@ -35,6 +35,6 @@ html {
   }
 
   a {
-   @apply font-medium
+    @apply font-medium
   }
 }
