@@ -4,7 +4,6 @@ import logo from "../public/logo.png";
 import styles from "../styles/Projects.module.css";
 
 const Projects = () => (
-  
     <div id="projects" className={styles.container}>
       <div className={styles.containerLogo}>
         <div className="col-span-4">
