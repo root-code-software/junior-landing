@@ -1,0 +1,23 @@
+.footer {
+    @apply w-full p-5 text-center font-bold;
+}
+
+.title {
+    @apply text-xl;
+}
+
+.Container_contact {
+    @apply w-11/12 flex flex-wrap m-auto my-4 sm:flex-nowrap lg:w-1/2;
+}
+
+.Contact {
+    @apply m-auto flex text-justify items-center sm:w-9/12;
+}
+
+.Icon {
+    @apply w-1/5 min-w-max text-3xl mx-5;
+}
+
+.Links {
+    @apply w-1/5 w-full text-sky-600 font-semibold;
+}

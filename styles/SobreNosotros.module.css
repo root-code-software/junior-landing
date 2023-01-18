@@ -1,0 +1,27 @@
+.container_sobrenosotros {
+    @apply w-full m-auto; 
+}
+
+.container_text {
+    @apply w-11/12 m-auto mb-12 max-w-5xl rounded-2xl bg-[#125C13] flex flex-wrap items-center sm:w-3/5 sm:flex-nowrap sm:bg-transparent sm:w-4/5;
+}
+
+.container_child {
+    @apply w-full bg-[#125C13] m-auto text-center p-8 text-[#fff] leading-8 rounded-xl;
+}
+
+.text {
+    @apply w-full font-light;
+}
+
+.title_text {
+    @apply text-2xl text-center text-[#fff] my-3 font-extrabold;
+}
+
+.container_Image {
+    @apply w-full h-full sm:w-4/5;
+}
+
+.Image {
+    @apply w-full h-full m-auto h-96
+} 
