@@ -1,6 +1,6 @@
-import Image from "next/image"
-import imageSobreNosotros from "../public/sobreNosotros.png"
-import Style from "../styles/SobreNosotros.module.css"
+import Image from "next/image";
+import imageSobreNosotros from "../public/sobreNosotros.png";
+import Style from "../styles/SobreNosotros.module.css";
 
 const SobreNosotros = () => (
     <div className={Style.container_sobrenosotros}>
@@ -13,10 +13,11 @@ const SobreNosotros = () => (
                 <Image
                     src={imageSobreNosotros}
                     className={Style.Image}
+                    alt='Image Sobre Nosotros'
                 />
             </div>
         </div>
     </div>
-)
+);
 
 export default SobreNosotros

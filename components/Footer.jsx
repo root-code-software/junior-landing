@@ -1,7 +1,7 @@
-import React from "react"
-import Link from "next/link"
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa"
-import Style from "../styles/Footer.module.css"
+import React from "react";
+import Link from "next/link";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import Style from "../styles/Footer.module.css";
 
 const Footer = () => (
     <div className={Style.footer}>
@@ -17,6 +17,6 @@ const Footer = () => (
             </div>
         </div>
     </div>
-)
+);
 
 export default Footer
