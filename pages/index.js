@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
-import Footer from "../Components/Footer";
-import SobreNosotros from "../Components/SobreNosotros";
+import Footer from "../components/Footer";
+import SobreNosotros from "../components/SobreNosotros";
 
 export default function Home() {
   return (

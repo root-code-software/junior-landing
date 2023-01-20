@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import imageSobreNosotros from "../public/sobreNosotros.png";
 import Style from "../styles/SobreNosotros.module.css";
