@@ -4,7 +4,7 @@ import logo from "../public/logo.png";
 import styles from "../styles/Projects.module.css";
 
 const Projects = () => {
- const [show, setShow] = useState(true);
+ const [showMoreProjects, setShowMoreProjects] = useState(true);
 
   return (
     <div id="projects" className="w-full lg:h-screen p-2">
@@ -49,7 +49,7 @@ const Projects = () => {
             </div>
           </div>
 
-          { show &&
+          { showMoreProjects &&
           <div className={styles.logoProjects}>
               <div className="m-auto">
               <Image src={logo} className="rounded-xl" alt="Imagen del Proyecto #4" width="250" height="400"/> 
@@ -61,7 +61,7 @@ const Projects = () => {
                 </h4>
               </div>
             </div>
-               }{show &&
+               }{showMoreProjects &&
           <div>
           <div className={styles.logoProjects}>
               <div className="m-auto">
@@ -75,7 +75,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          } {show &&
+          } {showMoreProjects &&
             <div>
             <div className={styles.logoProjects}>
                 <div className="m-auto">
@@ -92,7 +92,7 @@ const Projects = () => {
             }
         </div><br/>
         <h3 className="py-4">Si quieres ver mas proyectos puedes verlos aqui</h3>
-        <button className={styles.btn} onClick={() => setShow(!show)}>{show === true ? "Ver menos"  : "Ver mas"}</button><br/>
+        <button className={styles.btn} onClick={() => setShowMoreProjects(!showMoreProjects)}>{showMoreProjects === true ? "Ver menos"  : "Ver mas"}</button><br/>
       </div>
     </div>
   );
