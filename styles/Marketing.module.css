@@ -1,0 +1,51 @@
+.Marketing {
+    @apply w-full h-auto mb-10 bg-[white] overflow-hidden md:h-screen;
+}
+
+.Container_opiniones {
+    @apply w-4/5 m-auto grid grid-cols-1 gap-3 md:w-4/5 md:grid-cols-2 grid-rows-2 lg:w-7/12;
+}
+
+.Opiniones {
+    @apply border-2 p-6 rounded-lg bg-opacity-60 bg-[#222] z-10;
+}
+
+.Opiniones:nth-child(4) {
+    @apply invisible md:visible;
+}
+
+.Valoracion {
+    @apply flex mt-1 gap-1 text-white text-lg;
+}
+
+.Photo_Perfil {
+    @apply w-14 rounded-full mr-4;
+}
+
+.Info_User {
+    @apply flex items-center text-white text-xl font-semibold;
+}
+
+.Opinion {
+    @apply mt-8 text-white text-center;
+}
+
+.Mancha1 {
+    @apply absolute h-3/5 mt-72 w-4/5 -left-24 md:h-full md:w-3/6 md:mt-0 md:-left-28 lg:w-7/12 lg:-left-64;
+}
+
+.Mancha2 {
+    @apply absolute h-3/5 w-6/12 left-1/2 -right-24 z-0 md:w-6/12 md:h-full lg:w-2/6 lg:left-2/3;
+}
+
+.Container_titles {
+    @apply w-10/12 text-center m-auto mt-32 mb-6 relative md:text-right md:mt-10 lg:mt-5;
+}
+
+.First_title {
+    @apply text-3xl;
+}
+
+.Flex_container {
+    @apply h-full flex items-center content-center sm:block;
+}
