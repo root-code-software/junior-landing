@@ -4,7 +4,7 @@ import logo from "../public/logo.png";
 import styles from "../styles/Projects.module.css";
 
 const Projects = () => {
- const [showMoreProjects, setShowMoreProjects] = useState(true);
+ const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   return (
     <div id="projects" className="w-full lg:h-screen p-2">
@@ -92,7 +92,7 @@ const Projects = () => {
             }
         </div><br/>
         <h3 className="py-4">Si quieres ver mas proyectos puedes verlos aqui</h3>
-        <button className={styles.btn} onClick={() => setShowMoreProjects(!showMoreProjects)}>{showMoreProjects === true ? "Ver menos"  : "Ver mas"}</button><br/>
+        <button className={styles.btn} onClick={() => setShowMoreProjects(!showMoreProjects)}>{showMoreProjects === false ? "Ver mas"  : "Ver menos"}</button><br/>
       </div>
     </div>
   );
