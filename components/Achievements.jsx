@@ -4,14 +4,14 @@ import achievements from "../public/achievements.png";
 import styles from "../styles/Achievements.module.css";
 
 const Achievements = () => (
-  <div id="achievements" className="w-full m-auto">
-    <div className={styles.container}>
+  <div id="achievements" className={styles.wallpaper}>
+    <div className={styles.container}><br/>
       <h2 className=" text-right pr-20 ">¿Que esperemos que logres?</h2>
       <div className={styles.containerLogo}>
         <div className="ml-10 ">
           <Image
             src={achievements}
-            className=""
+            className="ml-10"
             alt="/"
             width="600"
             height="500"
