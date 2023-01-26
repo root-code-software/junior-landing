@@ -11,5 +11,5 @@
 }
 
 .wallpaper {
-    @apply w-full m-auto bg-[#ffffff] bg-no-repeat bg-bottom bg-contain bg-[url('../public/Trazado.png')]
+    @apply w-full m-auto bg-white bg-no-repeat bg-bottom bg-contain bg-[url('../public/Trazado.png')]
 }
