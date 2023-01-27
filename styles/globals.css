@@ -35,7 +35,7 @@ html {
   }
 
   button {
-    @apply bg-purple-700 text-wh;
+    @apply bg-purple-700 text-white;
   }
 
   a {
