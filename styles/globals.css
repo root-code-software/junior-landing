@@ -11,34 +11,34 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#61E176] text-[#050505] tracking-wide
+    @apply bg-[#61E176] text-[#050505] tracking-wide;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-medium text-center;
   }
 
   h1 {
-    @apply text-4xl sm:text-6xl md:text-6xl font-[Raleway] text-left
+    @apply text-4xl sm:text-6xl md:text-6xl font-[Raleway] text-left;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl text-center
+    @apply text-3xl sm:text-4xl text-center;
   }
 
   h3 {
-    @apply sm:text-3xl text-center
+    @apply sm:text-3xl text-center;
   }
   
   li {
-    @apply text-white text-center
+    @apply text-white text-center;
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply bg-purple-700 text-wh;
   }
 
   a {
-   @apply font-medium
+   @apply font-medium;
   }
 }
