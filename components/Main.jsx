@@ -15,35 +15,43 @@ const Main = () => (
           Te ofrecemos un ambiente donde puedas practicar trabajar en tech, para
           que ganes experiencia simulando un ambiente de trajo real.
         </p>
-        <br/>
+        <br />
         <div className={styles.containerIcon}>
           <div className={styles.icon}>
-            <h2>200K+</h2>
-            <br/>
-            <a>
-              Usuarios <br/> Nuevos
-            </a>
-          </div>
-          <div className={styles.icon}>
-            <h2>15K+</h2>
-            <br/>
-            <a>
-              Estudiantes <br/> Satisfechos
-            </a>
-          </div>
-          <div className={styles.icon}>
-            <h2>200+</h2>
-            <br/>
-            <a>
-              Proyectos <br/> Finalizados
-            </a>
-          </div>
-          <div className={styles.icon}>
-            <h2>50+</h2>
+           <div className= {styles.subtitle}> <br/>
+            <h3 >200K+</h3>
             <br />
             <a>
-              Grupos <br/> Diseñados
+              Usuarios <br /> Nuevos
             </a>
+            </div>
+          </div>
+          <div className={styles.icon}>
+          <div className= {styles.subtitle}><br/>
+            <h3>15K+</h3>
+            <br />
+            <a>
+              Estudiantes <br /> Satisfechos
+            </a>
+            </div>
+          </div>
+          <div className={styles.icon}>
+          <div className= {styles.subtitle}><br/>
+            <h3>200+</h3>
+            <br />
+            <a>
+              Proyectos <br /> Finalizados
+            </a>
+          </div>
+          </div>
+          <div className={styles.icon}>
+          <div className= {styles.subtitle}><br/>
+            <h3>50+</h3>
+            <br />
+            <a>
+              Grupos <br /> Diseñados
+            </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
-import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
-      <Projects />
     </div>
   );
 }
