@@ -1,9 +1,13 @@
 .icon {
-    @apply shadow-lg shadow-gray-400 p-6 hover:scale-110 ease-in duration-300 bg-[#7eee9a] rounded-lg;
+    @apply shadow-lg shadow-gray-400 bg-[#7eee9a] rounded-lg;
 }
 
 .containerIcon {
-    @apply col-span-2 flex justify-between max-w-[800px];
+    @apply grid grid-cols-2 lg:grid-cols-4 gap-2 max-w-[700px];
+}
+
+.subtitle {
+    @apply flex flex-col items-center justify-center m-auto;
 }
 
 .container {
