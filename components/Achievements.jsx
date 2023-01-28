@@ -8,10 +8,10 @@ const Achievements = () => (
     <div className={styles.container}><br/>
       <h2 className=" text-right pr-20 ">¿Que esperemos que logres?</h2>
       <div className={styles.containerLogo}>
-        <div className="ml-10 ">
+        <div>
           <Image
             src={achievements}
-            className="ml-10"
+            className=""
             alt="/"
             width="600"
             height="500"
@@ -35,7 +35,7 @@ const Achievements = () => (
               </ul>
             </div>
           </div>
-      </div>
+      </div><br/>
     </div>
   </div>
 );
