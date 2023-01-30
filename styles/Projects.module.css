@@ -1,5 +1,5 @@
 .container {
-    @apply max-w-[1200px] mx-auto flex flex-col justify-center h-full items-center;
+    @apply max-w-[1240px] mx-auto flex flex-col justify-center items-center;
 }
 
 .containerLogo {
@@ -12,9 +12,13 @@
 
 .descriptionProjects {
     @apply flex flex-row items-center justify-center;
-
 }
 
 .btn {
     @apply flex font-medium rounded-lg text-sm px-10 py-2.5 mr-2;
+}
+
+.wallpaper {
+    @apply bg-no-repeat  bg-[url('../public/CloudsProjects.png')]  
+    w-full m-auto  bg-top bg-contain 
 }

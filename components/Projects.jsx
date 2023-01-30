@@ -5,11 +5,10 @@ import styles from "../styles/Projects.module.css";
 
 const Projects = () => {
  const [showMoreProjects, setShowMoreProjects] = useState(false);
-
   return (
-    <div id="projects" className="w-full lg:h-screen p-2">
-      <div className={styles.container}>
-        <h1 className="py-4">Algunos de nuestros proyectos</h1><br/>
+    <div id="projects" className={styles.wallpaper}>
+      <div className={styles.container}><br/>
+        <h1 className="pt-10">Algunos de nuestros proyectos</h1><br/>
         <div className={styles.containerLogo}>
             <div className={styles.logoProjects}>
               <div className="m-auto">
@@ -95,6 +94,6 @@ const Projects = () => {
         <button className={styles.btn} onClick={() => setShowMoreProjects(!showMoreProjects)}>{showMoreProjects === false ? "Ver mas"  : "Ver menos"}</button><br/>
       </div>
     </div>
-  );
+     );
 };
 export default Projects;

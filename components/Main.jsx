@@ -4,6 +4,7 @@ import MainLogo from "../public/MainLogo.png";
 import styles from "../styles/Main.module.css";
 
 const Main = () => (
+  <div className={styles.wallpaper}>
   <div className={styles.container}>
     <div className={styles.containerMain}>
       <div className={styles.title}>
@@ -66,5 +67,6 @@ const Main = () => (
       </div>
     </div>
   </div>
+ </div>
 );
 export default Main;
