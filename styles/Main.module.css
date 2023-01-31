@@ -11,7 +11,7 @@
 }
 
 .container {
-    @apply w-full md:h-screen p-2 flex text-center items-center py-16;
+    @apply w-full md:h-screen p-2 flex text-center items-center pt-10;
 }
 
 .containerMain {
@@ -32,4 +32,8 @@
 
 .titleYellow {
     @apply text-[#FACC15];
+  }
+
+  .wallpaper {
+    @apply bg-no-repeat bg-bottom bg-contain bg-[url('../public/CloudsMain.png')]
   }
