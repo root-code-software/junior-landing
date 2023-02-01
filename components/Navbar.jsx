@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo.png";
+import AiconClosed from "../public/aicons/AiconClosed.png";
+import AiconMenu from "../public/aicons/AiconMenu.png";
 import styles from "../styles/Navbar.module.css";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, isNavOpen] = useState(false);
 
   const handleNav = () => {
-    setNav(!nav);
+    isNavOpen(!nav);
   };
 
   return (
@@ -32,7 +33,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} />
+            <Image src={AiconMenu} alt="/icono menu" sizes="25"></Image>
           </div>
         </div>
       </div>
@@ -43,28 +44,28 @@ const Navbar = () => {
               onClick={handleNav}
               className={styles.iconsMobile}
             >
-              <AiOutlineClose />
+             <Image src={AiconClosed} alt="/icono cerrar" ></Image>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-10 text-sm">
+                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
                   Inicio
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-10 text-sm">
+                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
                   Proyectos
                 </li>
               </Link>
               <Link href="/#plans">
-                <li onClick={() => setNav(false)} className="py-10 text-sm">
+                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
                   Planes
                 </li>
               </Link>
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-10 text-sm">
+                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
                   Sobre Nosotros
                 </li>
               </Link>
