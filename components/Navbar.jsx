@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link href="/#plans">
               <li className={styles.item}>Planes</li>
             </Link>
-            <Link href="/">
+            <Link href="/#sobreNosotros">
               <li className={styles.item}>Sobre Nosotros</li>
             </Link>
           </ul>
@@ -64,7 +64,7 @@ const Navbar = () => {
                   Planes
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#sobreNosotros">
                 <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
                   Sobre Nosotros
                 </li>
