@@ -7,10 +7,10 @@ import AiconMenu from "../public/aicons/AiconMenu.png";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
-  const [nav, isNavOpen] = useState(false);
+  const [isNavOpen, setNavOpen] = useState(false);
 
   const handleNav = () => {
-    isNavOpen(!nav);
+    setNavOpen(!isNavOpen);
   };
 
   return (
@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-        <div className={ nav ? `${styles.open}` : `${styles.close}`}>
+        <div className={ isNavOpen ? `${styles.open}` : `${styles.close}`}>
           <div className={styles.logoMobile}>
             <Image src={logo} alt="/" width="87" height="35" />
             <div
@@ -50,22 +50,22 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
+                <li onClick={() => setNavOpen(false)} className="py-10 text-sm">
                   Inicio
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
+                <li onClick={() => setNavOpen(false)} className="py-10 text-sm">
                   Proyectos
                 </li>
               </Link>
               <Link href="/#plans">
-                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
+                <li onClick={() => setNavOpen(false)} className="py-10 text-sm">
                   Planes
                 </li>
               </Link>
               <Link href="/#sobreNosotros">
-                <li onClick={() => isNavOpen(false)} className="py-10 text-sm">
+                <li onClick={() => setNavOpen(false)} className="py-10 text-sm">
                   Sobre Nosotros
                 </li>
               </Link>
