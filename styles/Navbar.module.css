@@ -1,11 +1,27 @@
-  .item {
-    @apply ml-10 text-sm uppercase hover:border-b font-bold;
-  }
+.item {
+  @apply ml-10 text-sm uppercase hover:border-b font-bold;
+}
 
-  .container {
-    @apply fixed w-full h-20 shadow-xl z-[100] bg-[#2BA84A];
-  }
+.container {
+  @apply fixed w-full h-20 shadow-xl z-[100] bg-[#2BA84A];
+}
 
-  .containerNavbar { 
-    @apply flex justify-between items-center w-full h-full px-2 pr-20;
-  }
+.containerNavbar { 
+  @apply flex justify-between items-center w-full h-full px-2 pr-10;
+}
+
+.open {
+  @apply fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-[#2f6937] p-10;
+}
+
+.close {
+  @apply fixed left-[-100%] top-0 p-10;
+}
+
+.logoMobile {
+  @apply flex w-full items-center justify-between;
+}
+
+.iconsMobile {
+  @apply rounded-full shadow-lg p-2 cursor-pointer bg-white;
+}
