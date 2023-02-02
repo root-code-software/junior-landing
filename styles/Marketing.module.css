@@ -1,5 +1,5 @@
 .Marketing {
-    @apply w-full h-auto mb-10 bg-[white] overflow-hidden md:h-screen;
+    @apply w-full h-auto bg-[white] overflow-hidden md:h-screen;
 }
 
 .Container_opiniones {
