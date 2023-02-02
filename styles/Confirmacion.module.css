@@ -1,0 +1,23 @@
+.ContainerConfirm {
+    @apply w-screen h-screen flex items-center;
+}
+
+.Confirm {
+    @apply w-4/5 h-auto p-2 m-auto rounded text-center bg-[darkgreen];
+}
+
+.FirstTitle {
+    @apply w-full lg:w-80 mb-5 mt-6 m-auto text-2xl text-white;
+}
+
+.LastTitle {
+    @apply w-full lg:w-80 m-auto text-xs text-opacity-70 text-white;
+}
+
+.Image {
+    @apply m-auto mt-20 h-72 lg:mt-5 mb-7;
+}
+
+.Link {
+    @apply w-40 lg:w-52 bg-purple-700 p-2 m-auto mb-5 block rounded;
+}

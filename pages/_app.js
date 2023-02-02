@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 import SobreNosotros from "../components/SobreNosotros";
+import Marketing from "../components/Marketing";
 import Achievements from "../components/Achievements";
 import Projects from "../components/Projects";
 import Plans from "../components/Plans";
@@ -11,6 +12,7 @@ const MyApp = () => (
   <>
     <Navbar />
     <Main />
+    <Marketing />
     <Achievements />
     <Projects />
     <Plans />
