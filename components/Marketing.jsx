@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import profilephoto1 from "../public/Persona-4.png";
-import profilephoto2 from "../public/persona-3.png";
-import profilephoto3 from "../public/persona-2.png";
-import profilephoto4 from "../public/Persona-1.png";
+import Profilephoto1 from "../public/Persona-4.png";
+import Profilephoto2 from "../public/persona-3.png";
+import Profilephoto3 from "../public/persona-2.png";
+import Profilephoto4 from "../public/Persona-1.png";
 import Stain1 from "../public/Trazado 2.png";
 import Stain2 from "../public/Trazado 3.png";
 import Style from "../styles/Marketing.module.css";
@@ -22,7 +22,7 @@ const Marketing = () => (
             <div className={Style.Opiniones}>
                 <div>
                     <div className={Style.Info_User}>
-                        <Image className={Style.Photo_Perfil} src={profilephoto1} alt=""/>
+                        <Image className={Style.Photo_Perfil} src={Profilephoto1} alt=""/>
                         <div>
                             <p>Franco, 24 años</p>
                             <div className={Style.Valoracion}>
@@ -39,7 +39,7 @@ const Marketing = () => (
             <div className={Style.Opiniones}>
                 <div>
                     <div className={Style.Info_User}>
-                        <Image className={Style.Photo_Perfil} src={profilephoto2} alt=""/>
+                        <Image className={Style.Photo_Perfil} src={Profilephoto2} alt=""/>
                         <div>
                             <p>Fernanda, 24 años</p>
                             <div className={Style.Valoracion}>
@@ -56,7 +56,7 @@ const Marketing = () => (
             <div className={Style.Opiniones}>
                 <div>
                     <div className={Style.Info_User}>
-                        <Image className={Style.Photo_Perfil} src={profilephoto3} alt=""/>
+                        <Image className={Style.Photo_Perfil} src={Profilephoto3} alt=""/>
                         <div>
                             <p>Sonia, 27 años</p>
                             <div className={Style.Valoracion}>
@@ -73,7 +73,7 @@ const Marketing = () => (
             <div className={Style.Opiniones}>
                 <div>
                     <div className={Style.Info_User}>
-                        <Image className={Style.Photo_Perfil} src={profilephoto4} alt=""/>
+                        <Image className={Style.Photo_Perfil} src={Profilephoto4} alt=""/>
                         <div>
                             <p>Sandra, 26 años</p>
                             <div className={Style.Valoracion}>
