@@ -3,7 +3,7 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import FotoPerfil1 from "../public/Persona-4.png";
 import FotoPerfil2 from "../public/persona-3.png";
-import FotoPerfil3 from "../public/Persona-2.png";
+import FotoPerfil3 from "../public/persona-2.png";
 import FotoPerfil4 from "../public/Persona-1.png";
 import Mancha1 from "../public/Trazado 2.png";
 import Mancha2 from "../public/Trazado 3.png";
