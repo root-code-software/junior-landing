@@ -60,7 +60,7 @@ const Main = () => (
         <Image
           src={MainLogo}
           className="rounded-xl"
-          alt="/"
+          alt="Logo de la página"
           width="900"
           height="800"
         />

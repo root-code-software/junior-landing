@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerNavbar}>
-        <Image src={logo} alt="/" width="125" height="50" />
+        <Image src={logo} alt="Logo de la página" width="125" height="50" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
