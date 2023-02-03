@@ -6,8 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      margin: {
+        lg: '40rem'
+      },
       colors: {
-        darkgreen: '#125C13'
+        'darkgreen': '#125C13',
       }
     },
   },
