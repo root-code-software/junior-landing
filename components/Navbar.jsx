@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo.png";
-import AiconClosed from "../public/aicons/aiconClosed.png";
-import AiconMenu from "../public/aicons/aiconMenu.png";
+import AiconClosed from "../public/aicons/AiconClosed.png";
+import AiconMenu from "../public/aicons/AiconMenu.png";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
