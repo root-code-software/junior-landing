@@ -55,7 +55,7 @@ const Plans = () => (
         </div>
       </div>
       <br />
-      <button className={styles.btn}>Ver mas</button>
+      <button className={styles.btn}>Contratar</button>
       <br />
     </div>
   </div>
