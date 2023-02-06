@@ -1,9 +1,9 @@
 .Marketing {
-    @apply w-full h-auto bg-[white] overflow-hidden md:h-screen;
+    @apply w-full h-auto bg-[white] overflow-hidden lg:h-screen;
 }
 
 .Container_opiniones {
-    @apply w-4/5 m-auto grid grid-cols-1 gap-3 md:w-4/5 md:grid-cols-2 grid-rows-2 lg:w-7/12;
+    @apply w-4/5 m-auto grid grid-cols-1 gap-3 md:mb-20 md:w-4/5 md:grid-cols-1 md:w-1/2 grid-rows-2 lg:grid-cols-2 grid-rows-2 lg:w-7/12;
 }
 
 .Opiniones {
@@ -11,7 +11,7 @@
 }
 
 .Opiniones:nth-child(4) {
-    @apply invisible md:visible;
+    @apply invisible lg:visible;
 }
 
 .Valoracion {
@@ -30,12 +30,16 @@
     @apply mt-8 text-white text-center;
 }
 
-.Mancha1 {
+.Stain1 {
     @apply absolute h-3/5 mt-72 w-4/5 -left-24 md:h-full md:w-3/6 md:mt-0 md:-left-28 lg:w-7/12 lg:-left-64;
 }
 
-.Mancha2 {
+.Stain2 {
     @apply absolute h-3/5 w-6/12 left-1/2 -right-24 z-0 md:w-6/12 md:h-full lg:w-2/6 lg:left-2/3;
+}
+
+.Stain2Mobile {
+    @apply absolute h-3/5 w-6/12 mt-lg left-1/2 -right-24 z-0 md:w-6/12 md:h-full lg:w-2/6 lg:left-2/3 md:invisible;
 }
 
 .Container_titles {
