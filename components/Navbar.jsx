@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link href="/#plans">
               <li className={styles.item}>Planes</li>
             </Link>
-            <Link href="/#sobreNosotros">
+            <Link href="/#about">
               <li className={styles.item}>Sobre Nosotros</li>
             </Link>
           </ul>

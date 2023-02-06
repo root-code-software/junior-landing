@@ -3,8 +3,8 @@ import Image from "next/image";
 import imageSobreNosotros from "../public/sobreNosotros.png";
 import Style from "../styles/SobreNosotros.module.css";
 
-const SobreNosotros = () => (
-    <div id="aboutUs" className={Style.container_sobrenosotros}>
+const About = () => (
+    <div id="about" className={Style.container_sobrenosotros}>
         <div className={Style.container_text}>
             <div className={Style.container_child}>
                 <p className={Style.title_text}>Sobre Nosotros</p>
@@ -21,4 +21,4 @@ const SobreNosotros = () => (
     </div>
 );
 
-export default SobreNosotros
+export default About

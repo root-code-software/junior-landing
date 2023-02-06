@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
-import SobreNosotros from "../components/SobreNosotros";
+import About from "../components/About";
 import Marketing from "../components/Marketing";
 import Achievements from "../components/Achievements";
 import Projects from "../components/Projects";
@@ -23,7 +23,7 @@ export default function Home() {
     <Achievements />
     <Projects />
     <Plans />
-    <SobreNosotros />
+    <About />
     <Footer />
     </div>
   );
