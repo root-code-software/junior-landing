@@ -1,7 +1,20 @@
-import React from "react";
+import React from 'react';
+import Link from "next/link";
+import Head from 'next/head';
 import Style from "../styles/PayForm.module.css";
 
-const FormPay = () => (
+const FormPay = () => {
+  return (
+    <>
+      <Head>
+        <title>Metodo de pago</title>
+        <meta
+          name='description'
+          content="Landing page"
+        />
+        <link rel='icon' href='/fav.png' />
+      </Head>
+
     <form className={Style.Form}>
         <div className={Style.ContainerForm}>
             <div className={Style.ContainerMethodPay}>
@@ -29,7 +42,9 @@ const FormPay = () => (
                         <option>Pro / 5 USD</option>
                         <option>Avanzado / 50 USD</option>
                     </select>
+                    <Link href='/#plans'>
                     <button className={Style.ButtonCancel}>Cancelar</button>
+                    </Link>
                 </div>
                 <div className={Style.Flex2}>
                     <p className={Style.indicators}>Numero de tarjeta</p>
@@ -42,7 +57,9 @@ const FormPay = () => (
                             <p className={Style.PriceTotal}>$5 USD</p>
                         </div>
                     </div>
+                    <Link href='/Confirm'>
                     <button className={Style.ButtonContinue}>Continuar</button>
+                    </Link>
                 </div>
             </div>
             <div>
@@ -75,7 +92,9 @@ const FormPay = () => (
                 </div>
             </div>
         </div>
-    </form>
+      </form>
+    </>
 );
+};
 
 export default FormPay;

@@ -1,5 +1,5 @@
 .ContainerForm {
-    @apply w-4/5 m-auto p-10 flex rounded-lg block bg-[darkgreen];
+    @apply w-4/5 m-auto p-10 rounded-lg block bg-[darkgreen];
 }
 
 .ContainerMethodPay {
