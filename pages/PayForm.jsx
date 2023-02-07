@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
-import Head from 'next/head';
+import Head from "next/head";
 import Style from "../styles/PayForm.module.css";
 
 const FormPay = () => {
@@ -9,7 +9,7 @@ const FormPay = () => {
       <Head>
         <title>Metodo de pago</title>
         <meta
-          name='description'
+          name="description"
           content="Landing page"
         />
         <link rel='icon' href='/fav.png' />
