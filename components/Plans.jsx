@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Plans.module.css";
+import Link from "next/link";
 
 const Plans = () => (
   <div id="plans">
@@ -55,7 +56,9 @@ const Plans = () => (
         </div>
       </div>
       <br />
+      <Link href='/PayForm'>
       <button className={styles.btn}>Contratar</button>
+        </Link>
       <br />
     </div>
   </div>
