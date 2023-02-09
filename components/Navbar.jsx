@@ -64,7 +64,7 @@ const Navbar = () => {
                   Planes
                 </li>
               </Link>
-              <Link href="/#aboutUs">
+              <Link href="/#about">
                 <li onClick={() => setNavOpen(false)} className="py-10 text-sm">
                   Sobre Nosotros
                 </li>

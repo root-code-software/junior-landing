@@ -1,17 +1,25 @@
 .ContainerForm {
-    @apply w-4/5 m-auto p-10 flex rounded-lg bg-[darkgreen];
+    @apply w-2/7 lg:w-4/5 lg:min-w-full xl:max-w-6xl xl:min-w-min m-auto mt-32  mb-10 p-10 lg:flex gap-10 rounded-lg bg-[darkgreen] overflow-hidden;
+}
+
+.Form {
+    @apply w-full flex items-center;
+}
+
+.ContainerSlider {
+    @apply flex w-5/6 gap-7 mt-16 lg:mt-0 lg:gap-0 lg:w-full;
 }
 
 .ContainerMethodPay {
-    @apply w-1/2 border-r-2 border-[#61E176] flex;
+    @apply w-2/7 flex flex-wrap lg:flex-nowrap border-r-0 border-[#61E176] lg:w-full lg:border-r-2;
 }
 
 .ContainerInfo {
-    @apply w-1/2;
+    @apply w-full lg:w-1/2;
 }
 
 .TitleMethodPay {
-    @apply mb-3 text-3xl font-bold text-white;
+    @apply w-full mb-3 min-w-max text-3xl font-bold text-white;
 }
 
 .TitleTypePlan {
@@ -19,51 +27,87 @@
 }
 
 .TitleInfo {
-    @apply mb-3;
+    @apply mb-3 text-center;
 }
 
 .MethodPay {
-    @apply w-52 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-full lg:w-52 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
 }
 
 .NumCount {
-    @apply w-52 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-52 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray] invisible lg:visible;
+}
+
+.NumCount2 {
+    @apply w-full lg:w-52 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray] lg:hidden;
 }
 
 .CodeSecurity {
-    @apply w-16 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-16 p-2 text-white rounded-lg mb-5 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray] invisible lg:visible;
+}
+
+.CodeSecurity2 {
+    @apply w-16 p-2 text-white rounded-lg mb-5 ml-2 text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray] inline visible lg:hidden;
 }
 
 .DayDate {
-    @apply w-14 p-2 mr-2 text-white text-xs rounded border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-1/5 lg:w-20 h-34 p-2 mr-2 text-white text-xs rounded border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
 }
 
 .YearDate {
-    @apply w-36 p-2 mb-5 text-white text-xs rounded border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-3/5 lg:w-36 p-2 mb-5 text-white text-xs rounded border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
 }
 
 .Plan {
-    @apply w-52 p-2 text-white rounded-lg text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-full lg:w-52 p-2 text-white rounded-lg text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray] block;
 }
 
 .ButtonCancel {
-    @apply w-52 p-1 mt-28 border-2 rounded border-indigo-700 bg-[darkgreen];
+    @apply w-52 p-1 mt-28 border-2 rounded border-indigo-700 bg-[darkgreen] hidden lg:block;
+}
+
+.ButtonCancel2 {
+    @apply w-1/2 p-1 border-2 text-center rounded border-indigo-700 bg-[darkgreen] block lg:hidden;
 }
 
 .Flex1 {
-    @apply w-1/2;
+    @apply w-4/5 lg:w-1/2;
 }
 
 .Flex2 {
-    @apply w-1/2 mt-12;
+    @apply w-4/5 lg:w-1/2 mt-12;
 }
 
 .indicators {
-    @apply font-normal text-sm text-opacity-70 text-white;
+    @apply font-normal text-sm text-opacity-70 text-white inline lg:block;
+}
+
+.indicatorDate {
+    @apply w-3/5 font-normal text-sm text-opacity-70 text-white;
+}
+
+.indicatorCodeSecurity {
+    @apply font-normal text-sm text-end text-opacity-70 text-white w-2/5 inline lg:hidden;
+}
+
+.indicator2 {
+    @apply font-normal text-sm text-opacity-70 text-white w-40 inline lg:hidden;
+}
+
+.indicatorsmobile {
+    @apply font-normal text-sm text-opacity-70 text-white w-40 inline hidden lg:block;
+}
+
+.indicatorsInfo {
+    @apply font-normal ml-5 text-sm text-opacity-70 text-white;
 }
 
 .ContainerTotal {
-    @apply w-full mt-40 border-[#61E176] border-t-2;
+    @apply w-full mt-0 lg:mt-40 border-[#61E176] border-t-4 lg:border-t-2;
+}
+
+.DataUser {
+    @apply block lg:hidden;
 }
 
 .Total {
@@ -78,20 +122,52 @@
     @apply w-4/5 text-lg mr-4 mt-2 text-right;
 }
 
+.ContainerButtons {
+    @apply w-full flex gap-5 mt-5;
+}
+
+.ContainerIndicatorsMobile {
+    @apply w-full flex items-end;
+}
+
+.ButtonContinueMobile {
+    @apply w-1/2 lg:w-52 p-1 border-t border-b border-l border-r border-purple-700 rounded text-white text-center bg-purple-800 block lg:hidden;
+}
+
 .ButtonContinue {
-    @apply w-52 mt-5 p-1 border-t border-b border-l border-r border-purple-700 rounded;
+    @apply w-1/2 lg:w-52 p-1 border-t border-b border-l border-r border-purple-700 rounded text-white text-center bg-purple-800 hidden lg:block;
+}
+
+.ButtonContinue2 {
+    @apply w-1/2 lg:w-52 p-1 border-t border-b border-l border-r border-purple-700 rounded lg:hidden;
 }
 
 .TitleInfo {
-    @apply mb-3 ml-3 text-3xl font-bold text-white;
+    @apply mb-3 ml-3 text-lg text-center lg:text-left lg:text-3xl font-bold text-white;
+}
+
+.Info1 {
+    @apply w-1/2 lg:w-full;
+}
+
+.Info1Mobile {
+    @apply w-7/5 lg:w-1/2 lg:w-full;
+}
+
+.Info2Mobile {
+    @apply w-7/5 lg:w-full;
+}
+
+.Info2 {
+    @apply w-1/2 lg:w-full;
 }
 
 .InputsInfo {
-    @apply w-52 p-2 text-white ml-5 mb-5 rounded-lg text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
+    @apply w-full lg:w-52 p-2 text-white ml-5 mb-5 rounded-lg text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray];
 }
 
-.indicatorsInfo {
-    @apply font-normal ml-5 text-sm text-opacity-70 text-white;
+.InputsInfomobile {
+    @apply w-full lg:w-52 p-2 text-white ml-5 mb-5 rounded-lg text-xs border-t border-b border-l border-r border-[white] bg-opacity-90 bg-[gray] lg:w-52;
 }
 
 .ContainerInfoAdition {
@@ -99,9 +175,77 @@
 }
 
 .ContainerInfo {
-    @apply w-1/2 flex;
+    @apply lg:w-1/2 flex;
 }
 
-.Form {
-    @apply w-screen h-screen flex items-center;
+.ContainerInfo1 {
+    @apply flex w-7/5 gap-10 lg:gap-0;
+}
+
+.ContainerInfo2 {
+    @apply flex w-full gap-1 flex-wrap lg:flex-nowrap lg:w-7/5 lg:gap-0;
+}
+
+.ContainerButtonsInfo {
+    @apply w-7/5 m-auto block flex gap-10 lg:gap-0 ml-5 mt-44 lg:hidden;
+}
+
+.Billing {
+    @apply w-2/7 lg:w-full;
+}
+
+.MobileExpirationDate {
+    @apply flex w-full lg:w-52;
+}
+
+.CodePostalMobile {
+    @apply font-normal ml-5 text-sm text-opacity-70 text-white hidden lg:block;
+}
+
+.CodePostalMobile2 {
+    @apply font-normal ml-5 text-sm text-opacity-70 text-white block lg:hidden;
+}
+
+.TitleConfirmData {
+    @apply w-2/7 lg:hidden text-white text-2xl;
+}
+
+.ContainerConfirm {
+    @apply mt-8;
+}
+
+.ConfirmData {
+    @apply text-white font-bold mb-5;
+}
+
+.ContainerButtonsConfirm {
+    @apply w-full flex gap-5 mt-5;
+}
+
+.InputRange {
+    @apply w-2/4 bg-purple-800 mt-6 z-10 absolute;
+}
+
+.Range {
+    @apply w-2/7 block mb-5 absolute lg:hidden;
+}
+
+.ContainerPaso1 {
+    @apply absolute z-20 text-white text-sm;
+}
+
+.ContainerPaso2 {
+    @apply absolute ml-24 z-20 text-white text-sm;
+}
+
+.ContainerPaso3 {
+    @apply absolute ml-52 z-20 text-white text-sm;
+}
+
+.Paso1FormMobile {
+    @apply bg-purple-800 w-4 h-4 block rounded-full mt-1;
+}
+
+.PasosFormMobile {
+    @apply bg-white w-4 h-4 block rounded-full m-auto mt-1;
 }
