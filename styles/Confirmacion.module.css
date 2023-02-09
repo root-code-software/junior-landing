@@ -1,9 +1,9 @@
 .ContainerConfirm {
-    @apply w-screen h-screen flex items-center;
+    @apply w-full h-full flex items-center;
 }
 
 .Confirm {
-    @apply w-4/5 h-auto p-2 m-auto rounded text-center bg-[darkgreen];
+    @apply w-4/5 h-auto p-2 m-auto mt-32 mb-10 lg:mt-32 lg:mb-10 rounded text-center bg-[darkgreen];
 }
 
 .FirstTitle {
